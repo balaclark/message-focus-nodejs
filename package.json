@@ -6,10 +6,14 @@
     {
       "name": "Andrew Gilmore",
       "email": "andrew.gilmore@electricwordplc.com"
+    },
+    {
+      "name": "Bala Clark",
+      "email": "bala.clark@clock.co.uk"
     }
   ],
   "scripts": {
-    "test": ""
+    "test": "mocha"
   },
   "main": "index.js",
   "repository": {
@@ -19,5 +23,10 @@
   "dependencies": {
     "lodash": "^2.4.1",
     "xmlrpc": "^1.2.0"
+  },
+  "devDependencies": {
+    "assert-diff": "^1.0.1",
+    "mocha": "^2.3.3",
+    "sinon": "^1.17.1"
   }
 }
