@@ -2,6 +2,7 @@ module.exports = mockClient
 
 var methods =
     { 'campaign.create': mockCreate
+    , 'campaign.update': mockUpdate
     }
 
 function mockClient() {
@@ -23,4 +24,8 @@ function mockCreate(data, cb) {
       , colour: 'blue'
       }
   cb(null, res)
+}
+
+function mockUpdate(data, cb) {
+  return cb(null, 1)
 }
