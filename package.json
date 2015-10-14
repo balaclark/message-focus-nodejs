@@ -18,7 +18,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ewplc/message-focus-nodejs"
+    "url": "https://github.com/balaclark/message-focus-nodejs"
   },
   "dependencies": {
     "lodash": "^2.4.1",
