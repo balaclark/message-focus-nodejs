@@ -1,19 +1,12 @@
 var assert = require('assert-diff')
-  , sinon = require('sinon')
   , mockClient = require('./lib/mock-xmlrpc-client')()
   , createCampaign = require('../lib/campaign')
 
 describe('Campaign', function () {
   var campaign
-    , spyClient
 
   beforeEach(function () {
-    spyClient = sinon.spy(mockClient.methodCall)
     campaign = createCampaign(mockClient)
-  })
-
-  afterEach(function () {
-    spyClient.reset()
   })
 
   describe('Create', function () {
