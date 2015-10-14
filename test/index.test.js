@@ -12,7 +12,7 @@ function XmlrpcSpy() {
 
 describe('MessageFocus', function () {
   var xmlrpcSpy
- 
+
   beforeEach(function () {
     xmlrpcSpy = new XmlrpcSpy() 
     MessageFocus.__set__('xmlrpc', xmlrpcSpy) 
